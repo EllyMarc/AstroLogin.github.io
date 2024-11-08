@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #170c23;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background-color: #170c23;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
+
+    & h1, h2 {
+        color: #81a9ff;
+    }
+}
+
+#formcard {
+    background-color: #2d1c3d;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content; 
+    box-sizing: border-box; 
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.form-content {
+    margin-bottom: 35px;
+
+    & p {
+        color: #827498;
+        font-weight: 600;
+        margin: 10px 0 10px 0;
+        font-size: 0.8rem;
+
+        & span {
+            font-weight: 300;
+        }
+    }
+
+    & input {
+        background-color: #55466b;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 13px;
+        text-indent: 16px;
+        padding: 15px 0 15px 0 ;
+        font-weight: 600;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+}
+
+#labelu.error, #labelp.error {
+    color: red;
+}
+
+.error-message {
+    display: none;
+}
+
+#info {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.7rem;
+
+}
+
+#btn {
+    background-color: #407cff;
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 13px;
+    box-shadow: rgba(64, 124, 255, 0.195) 0px 5px 15px;
+    color: #170c23;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+#btn:hover {
+    box-shadow: rgba(64, 124, 255, 0.518) 0px 5px 15px;
+}
+
+::-webkit-input-placeholder {
+    color: #827498;
+    }
+     
+    :-moz-placeholder {
+    color: #827498;
+    }
+    
+    ::-moz-placeholder {
+    color: #827498;  
+    }
+    
+    :-ms-input-placeholder {  
+    color: #827498;
+    }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+    & a {
+        color: white;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: #407cff;
+    }
+
+
+    #main {
+        padding: 30px 40px;
+    }
+
+
+    
+}
+
+@media (min-width: 800px) {
+
+    #main {
+        flex-direction: row;
+    }
+
+    #formcard {
+        margin-left: 50px;
+    }
+}
+
+
+
+
